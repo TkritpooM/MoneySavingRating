@@ -1,9 +1,11 @@
 package com.example.project_app;
 
+import android.net.Uri;
 import android.os.Bundle;
 import android.content.Intent;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -14,6 +16,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
@@ -24,6 +27,7 @@ public class Sugesstion extends AppCompatActivity {
 
     //step 1 Declare components names
     TextView no1text, no2text, no3text, no4text, no5text, highestExpenseText;
+    ImageButton imgBT1, imgBT2, imgBT3;
     Button myresetBT;
 
     @Override
@@ -39,6 +43,10 @@ public class Sugesstion extends AppCompatActivity {
         no4text = findViewById(R.id.no4);
         no5text = findViewById(R.id.no5);
         highestExpenseText = findViewById(R.id.no1_butdiff);
+
+        imgBT1 = findViewById(R.id.image_link1);
+        imgBT2 = findViewById(R.id.image_link2);
+        imgBT3 = findViewById(R.id.image_link3);
 
         myresetBT = findViewById(R.id.redo);
 
@@ -66,6 +74,36 @@ public class Sugesstion extends AppCompatActivity {
 
         // Show highest
         highestExpenseText.setText("" + expenses.get(0).category + " (" + expenses.get(0).amount + ")");
+
+        // ImageButton1
+        imgBT1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                imgBT1.setImageDrawable(ContextCompat.getDrawable(getApplicationContext(),R.drawable.imgbutt1));
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.cimbthai.com/th/personal/blog/financial-guru/5-tips-for-manage-money.html"));
+                startActivity(browserIntent);
+            }
+        });
+
+        // ImageButton2
+        imgBT2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                imgBT2.setImageDrawable(ContextCompat.getDrawable(getApplicationContext(),R.drawable.imgbutt2));
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://makebykbank.kbtg.tech/articles/smart-way-to-save-money"));
+                startActivity(browserIntent);
+            }
+        });
+
+        // ImageButton3
+        imgBT3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                imgBT3.setImageDrawable(ContextCompat.getDrawable(getApplicationContext(),R.drawable.imgbutt3));
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.tokiomarine.com/th/th/life/about-us/media-centre/9-tips-money-saving-can-follow.html"));
+                startActivity(browserIntent);
+            }
+        });
 
         //step 3 Back to Previous Page
         myresetBT.setOnClickListener(new View.OnClickListener() {
