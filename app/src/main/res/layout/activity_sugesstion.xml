@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4DACB"
+    tools:context=".Sugesstion">
+
+    <TextView
+        android:id="@+id/text16"
+        android:layout_width="466dp"
+        android:layout_height="83dp"
+        android:layout_x="-39dp"
+        android:layout_y="13dp"
+        android:gravity="center"
+        android:text="คำแนะนำ"
+        android:textSize="48sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="26dp"
+        android:layout_y="106dp"
+        android:gravity="center|start"
+        android:text="ลำดับการใช้จ่าย (มาก-น้อย)"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="57dp"
+        android:layout_y="147dp"
+        android:gravity="center|start"
+        android:text="1"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/no1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="74dp"
+        android:layout_y="148dp"
+        android:text="result"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/text26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="57dp"
+        android:layout_y="179dp"
+        android:gravity="center|start"
+        android:text="2"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/no2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="74dp"
+        android:layout_y="179dp"
+        android:text="result"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/text27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="57dp"
+        android:layout_y="211dp"
+        android:gravity="center|start"
+        android:text="3"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/no3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="74dp"
+        android:layout_y="211dp"
+        android:text="result"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/text28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="57dp"
+        android:layout_y="243dp"
+        android:gravity="center|start"
+        android:text="4"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/no4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="75dp"
+        android:layout_y="243dp"
+        android:text="result"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/text29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="58dp"
+        android:layout_y="276dp"
+        android:gravity="center|start"
+        android:text="5"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/no5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="76dp"
+        android:layout_y="276dp"
+        android:text="result"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/text30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="28dp"
+        android:layout_y="335dp"
+        android:gravity="center|start"
+        android:text="ขอแนะนำให้ลดค่าใช้จ่ายของ"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/no1_butdiff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_x="0dp"
+        android:layout_y="378dp"
+        android:gravity="center_horizontal"
+        android:text="result"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/text31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="191dp"
+        android:layout_y="415dp"
+        android:gravity="center|start"
+        android:text="*เนื่องจากใช้จ่ายในหมวดนี้เยอะสุด"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="23dp"
+        android:layout_y="465dp"
+        android:gravity="center|start"
+        android:text="แนะนำเพิ่มคลิกเลย"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_x="-1dp"
+        android:layout_y="518dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_x="-1dp"
+            android:layout_y="524dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/image_link1"
+                android:layout_width="174dp"
+                android:layout_height="169dp"
+                android:layout_x="-1dp"
+                android:layout_y="524dp"
+                app:srcCompat="@android:drawable/ic_menu_search" />
+
+            <ImageButton
+                android:id="@+id/image_link2"
+                android:layout_width="174dp"
+                android:layout_height="169dp"
+                android:layout_weight="1"
+                android:layout_x="173dp"
+                android:layout_y="524dp"
+                app:srcCompat="@android:drawable/ic_menu_search" />
+
+            <ImageButton
+                android:id="@+id/image_link3"
+                android:layout_width="174dp"
+                android:layout_height="169dp"
+                android:layout_weight="1"
+                android:layout_x="348dp"
+                android:layout_y="524dp"
+                app:srcCompat="@android:drawable/ic_menu_search" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <Button
+        android:id="@+id/redo"
+        android:layout_width="148dp"
+        android:layout_height="65dp"
+        android:layout_x="123dp"
+        android:layout_y="703dp"
+        android:backgroundTint="#F87777"
+        android:text="ทำใหม่"
+        android:textColor="#090000"
+        android:textColorLink="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+</AbsoluteLayout>

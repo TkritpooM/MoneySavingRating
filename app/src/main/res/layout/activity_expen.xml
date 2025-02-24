@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4DACB"
+    tools:context=".expen">
+
+    <TextView
+        android:id="@+id/text4"
+        android:layout_width="466dp"
+        android:layout_height="83dp"
+        android:layout_x="-36dp"
+        android:layout_y="-2dp"
+        android:gravity="center"
+        android:text="รายจ่าย"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_x="26dp"
+        android:layout_y="74dp"
+        android:gravity="center|start"
+        android:text="ค่าอาหาร 🍟"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/input_food"
+        android:layout_width="337dp"
+        android:layout_height="wrap_content"
+        android:layout_x="26dp"
+        android:layout_y="103dp"
+        android:ems="10"
+        android:hint="อาหาร"
+        android:inputType="number"
+        android:textColor="#878383" />
+
+    <TextView
+        android:id="@+id/text6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_x="26dp"
+        android:layout_y="166dp"
+        android:gravity="center|start"
+        android:text="ค่าใช้จ่ายในการเดินทาง  🚗"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/input_fare"
+        android:layout_width="337dp"
+        android:layout_height="wrap_content"
+        android:layout_x="26dp"
+        android:layout_y="194dp"
+        android:ems="10"
+        android:hint="เดินทาง"
+        android:inputType="number"
+        android:textColor="#878383" />
+
+    <TextView
+        android:id="@+id/text7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_x="25dp"
+        android:layout_y="258dp"
+        android:gravity="center|start"
+        android:text="ค่าใช้จ่ายในครัวเรือน 🏠"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/input_home"
+        android:layout_width="337dp"
+        android:layout_height="wrap_content"
+        android:layout_x="25dp"
+        android:layout_y="286dp"
+        android:ems="10"
+        android:hint="ครัวเรือน (สบู่ ผงซักฟอก)"
+        android:inputType="number"
+        android:textColor="#878383" />
+
+    <TextView
+        android:id="@+id/text8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_x="26dp"
+        android:layout_y="353dp"
+        android:gravity="center|start"
+        android:text="ค่าสาธารณูปโภค 📞"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/input_util"
+        android:layout_width="337dp"
+        android:layout_height="wrap_content"
+        android:layout_x="26dp"
+        android:layout_y="381dp"
+        android:ems="10"
+        android:hint="ึค่าโทรศัพท์ (ค่าไฟ ค่าน้ำประปา)"
+        android:inputType="number"
+        android:textColor="#878383" />
+
+    <TextView
+        android:id="@+id/text9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_x="26dp"
+        android:layout_y="446dp"
+        android:gravity="center|start"
+        android:text="ิอื่นๆ"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/input_other"
+        android:layout_width="337dp"
+        android:layout_height="wrap_content"
+        android:layout_x="25dp"
+        android:layout_y="475dp"
+        android:ems="10"
+        android:hint="ค่าใช้จ่ายเพิ่มเติม (ของใช้ฟุ่มเฟย)"
+        android:inputType="number"
+        android:textColor="#878383" />
+
+    <Button
+        android:id="@+id/goincomeBT"
+        android:layout_width="148dp"
+        android:layout_height="65dp"
+        android:layout_x="29dp"
+        android:layout_y="566dp"
+        android:backgroundTint="#F87777"
+        android:text="ก่อนหน้า"
+        android:textColor="#090000"
+        android:textColorLink="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/gosummaryBT"
+        android:layout_width="148dp"
+        android:layout_height="65dp"
+        android:layout_x="216dp"
+        android:layout_y="565dp"
+        android:backgroundTint="#F87777"
+        android:text="ถัดไป"
+        android:textColor="#090000"
+        android:textColorLink="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+</AbsoluteLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4DACB"
+    tools:context=".income">
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="393dp"
+        android:layout_height="83dp"
+        android:layout_x="0dp"
+        android:layout_y="2dp"
+        android:gravity="center"
+        android:text="รายรับ"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="393dp"
+        android:layout_height="83dp"
+        android:layout_x="0dp"
+        android:layout_y="35dp"
+        android:gravity="center"
+        android:text="และ"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="match_parent"
+        android:layout_height="83dp"
+        android:layout_x="0dp"
+        android:layout_y="76dp"
+        android:gravity="center"
+        android:text="เป้าหมายในการออม"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textincome"
+        android:layout_width="match_parent"
+        android:layout_height="83dp"
+        android:layout_x="29dp"
+        android:layout_y="180dp"
+        android:gravity="center|start"
+        android:text="รายรับ(ต่อเดือน) 💵"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/input_income"
+        android:layout_width="337dp"
+        android:layout_height="wrap_content"
+        android:layout_x="29dp"
+        android:layout_y="262dp"
+        android:ems="10"
+        android:hint="รายรับ"
+        android:inputType="number"
+        android:textColor="#878383" />
+
+    <TextView
+        android:id="@+id/textpoint"
+        android:layout_width="match_parent"
+        android:layout_height="83dp"
+        android:layout_x="29dp"
+        android:layout_y="334dp"
+        android:gravity="center|start"
+        android:text="เป้าหมายในการออม (%) 🪙"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/input_point"
+        android:layout_width="337dp"
+        android:layout_height="wrap_content"
+        android:layout_x="29dp"
+        android:layout_y="417dp"
+        android:ems="10"
+        android:hint="เป้าหมาย"
+        android:inputType="number"
+        android:textColor="#878383" />
+
+    <Button
+        android:id="@+id/goexpenBT"
+        android:layout_width="148dp"
+        android:layout_height="65dp"
+        android:layout_x="120dp"
+        android:layout_y="631dp"
+        android:backgroundTint="#F87777"
+        android:text="ถัดไป"
+        android:textColor="#090000"
+        android:textColorLink="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+</AbsoluteLayout>

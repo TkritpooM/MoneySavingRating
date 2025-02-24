@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4DACB"
+    tools:context=".summary">
+
+    <Button
+        android:id="@+id/goexpenBT"
+        android:layout_width="148dp"
+        android:layout_height="65dp"
+        android:layout_x="37dp"
+        android:layout_y="325dp"
+        android:backgroundTint="#F87777"
+        android:text="ทำใหม่"
+        android:textColor="#090000"
+        android:textColorLink="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/gographBT"
+        android:layout_width="148dp"
+        android:layout_height="65dp"
+        android:layout_x="212dp"
+        android:layout_y="326dp"
+        android:backgroundTint="#F87777"
+        android:text="ถัดไป"
+        android:textColor="#090000"
+        android:textColorLink="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/re_income"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="219dp"
+        android:layout_y="92dp"
+        android:text="result" />
+
+    <TextView
+        android:id="@+id/re_expen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="220dp"
+        android:layout_y="133dp"
+        android:text="result" />
+
+    <TextView
+        android:id="@+id/re_percen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="221dp"
+        android:layout_y="177dp"
+        android:text="result" />
+
+    <TextView
+        android:id="@+id/re_baht"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="222dp"
+        android:layout_y="219dp"
+        android:text="result" />
+
+    <TextView
+        android:id="@+id/re_sum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="223dp"
+        android:layout_y="266dp"
+        android:text="result" />
+
+    <TextView
+        android:id="@+id/text10"
+        android:layout_width="466dp"
+        android:layout_height="83dp"
+        android:layout_x="-36dp"
+        android:layout_y="-2dp"
+        android:gravity="center"
+        android:text="สรุปผลการเงิน"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text11"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_x="36dp"
+        android:layout_y="87dp"
+        android:gravity="center|start"
+        android:text="รายรับ :"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text12"
+        android:layout_width="157dp"
+        android:layout_height="wrap_content"
+        android:layout_x="37dp"
+        android:layout_y="128dp"
+        android:gravity="center|start"
+        android:text="รายจ่ายทั้งหมด :"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text13"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_x="37dp"
+        android:layout_y="171dp"
+        android:gravity="center|start"
+        android:text="เปอร์เซ็นการออม :"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text14"
+        android:layout_width="169dp"
+        android:layout_height="wrap_content"
+        android:layout_x="38dp"
+        android:layout_y="215dp"
+        android:gravity="center|start"
+        android:text="คิดเป็นเงิน(บาท) :"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text15"
+        android:layout_width="131dp"
+        android:layout_height="wrap_content"
+        android:layout_x="39dp"
+        android:layout_y="260dp"
+        android:gravity="center|start"
+        android:text="เงินคงเหลือ :"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+</AbsoluteLayout>

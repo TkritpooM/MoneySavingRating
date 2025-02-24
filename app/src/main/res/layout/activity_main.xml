@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4DACB"
+    tools:context=".MainActivity" >
+
+    <Button
+        android:id="@+id/openincome"
+        android:layout_width="447dp"
+        android:layout_height="1232dp"
+        android:layout_x="-28dp"
+        android:layout_y="-10dp"
+        android:backgroundTint="#F4DACB"
+        android:gravity="center"
+        android:text="Tap to start"
+        android:textColor="#090000"
+        android:textSize="20sp"
+        app:cornerRadius="0dp" />
+
+    <TextView
+        android:id="@+id/appname"
+        android:layout_width="411dp"
+        android:layout_height="129dp"
+        android:layout_x="-9dp"
+        android:layout_y="12dp"
+        android:gravity="center"
+        android:text="ออมเงินออมใจ"
+        android:textAlignment="center"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="189dp"
+        android:layout_height="150dp"
+        android:layout_x="96dp"
+        android:layout_y="149dp"
+        app:srcCompat="@android:drawable/btn_star_big_on" />
+
+</AbsoluteLayout>
