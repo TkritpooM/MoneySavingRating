@@ -30,6 +30,9 @@ public class income extends AppCompatActivity {
         savingsEditText = findViewById(R.id.input_point);
         myopenexpen = findViewById(R.id.goexpenBT);
 
+        incomeEditText.setText(UserInputData.getIncome() == 0 ? "" : String.valueOf(UserInputData.getIncome()));
+        savingsEditText.setText(UserInputData.getSavingsPercentage() == 0 ? "" : String.valueOf(UserInputData.getSavingsPercentage()));
+
         //step 3
         myopenexpen.setOnClickListener(new View.OnClickListener() {
             @Override

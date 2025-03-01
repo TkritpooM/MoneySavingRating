@@ -126,8 +126,8 @@
         android:layout_y="643dp"
         android:backgroundTint="#F87777"
         android:fontFamily="@font/aminimalbold"
-        android:text="เริ่มใหม่"
-        android:textColor="#090000"
+        android:text="ก่อนหน้า"
+        android:textColor="#F6F6F6"
         android:textColorLink="#FFFFFF"
         android:textSize="34sp"
         android:textStyle="bold" />

@@ -214,7 +214,7 @@
         android:layout_y="486dp"
         android:fontFamily="@font/aminimalbold"
         android:gravity="center|start"
-        android:text="แนะนำเพิ่ม คลิกเลย!"
+        android:text="👉 แนะนำเพิ่ม คลิกเลย!"
         android:textSize="24sp"
         android:textStyle="bold" />
 
@@ -233,19 +233,22 @@
 
             <ImageButton
                 android:id="@+id/image_link1"
-                android:layout_width="174dp"
+                android:layout_width="240dp"
                 android:layout_height="169dp"
                 android:layout_x="-1dp"
                 android:layout_y="524dp"
+                android:background="#00FFFFFF"
                 app:srcCompat="@android:drawable/ic_menu_search" />
 
             <ImageButton
                 android:id="@+id/image_link2"
                 android:layout_width="174dp"
-                android:layout_height="169dp"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:layout_x="173dp"
+                android:layout_x="175dp"
                 android:layout_y="524dp"
+                android:background="#00FFFFFF"
+                android:scaleType="fitXY"
                 app:srcCompat="@android:drawable/ic_menu_search" />
 
             <ImageButton
@@ -255,6 +258,8 @@
                 android:layout_weight="1"
                 android:layout_x="348dp"
                 android:layout_y="524dp"
+                android:background="#00FFFFFF"
+                android:scaleType="fitXY"
                 app:srcCompat="@android:drawable/ic_menu_search" />
 
         </LinearLayout>

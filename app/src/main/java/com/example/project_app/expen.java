@@ -35,36 +35,17 @@ public class expen extends AppCompatActivity {
         mysumBT = findViewById(R.id.gosummaryBT);
         myincomeT = findViewById(R.id.goincomeBT);
 
+        foodEditText.setText(UserInputData.getFood() == 0 ? "" : String.valueOf(UserInputData.getFood()));
+        transportEditText.setText(UserInputData.getTransport() == 0 ? "" : String.valueOf(UserInputData.getTransport()));
+        householdEditText.setText(UserInputData.getHousehold() == 0 ? "" : String.valueOf(UserInputData.getHousehold()));
+        phoneInternetEditText.setText(UserInputData.getPhoneInternet() == 0 ? "" : String.valueOf(UserInputData.getPhoneInternet()));
+        othersEditText.setText(UserInputData.getOthers() == 0 ? "" : String.valueOf(UserInputData.getOthers()));
+
         //step 3 go summary page (Next Page)
         mysumBT.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Step 1: Get the values from EditText
-                String foodStr = foodEditText.getText().toString();
-                String transportStr = transportEditText.getText().toString();
-                String householdStr = householdEditText.getText().toString();
-                String phoneInternetStr = phoneInternetEditText.getText().toString();
-                String othersStr = othersEditText.getText().toString();
-
-                // Step 2: Check if the inputs are valid
-                if (foodStr.isEmpty() || transportStr.isEmpty() || householdStr.isEmpty() || phoneInternetStr.isEmpty() || othersStr.isEmpty()) {
-                    Toast.makeText(expen.this, "Please enter all expense values", Toast.LENGTH_SHORT).show();
-                    return;
-                }
-
-                // Step 3: Convert input to integers
-                int food = Integer.parseInt(foodStr);
-                int transport = Integer.parseInt(transportStr);
-                int household = Integer.parseInt(householdStr);
-                int phoneInternet = Integer.parseInt(phoneInternetStr);
-                int others = Integer.parseInt(othersStr);
-
-                // Step 4: Save data to UserInputData
-                UserInputData.setFood(food);
-                UserInputData.setTransport(transport);
-                UserInputData.setHousehold(household);
-                UserInputData.setPhoneInternet(phoneInternet);
-                UserInputData.setOthers(others);
+                setVariable();
 
                 //step 4
                 Intent myintent = new Intent(getApplicationContext(), summary.class);
@@ -76,6 +57,8 @@ public class expen extends AppCompatActivity {
         myincomeT.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                setVariable();
+
                 //step 4
                 Intent myintent = new Intent(getApplicationContext(), income.class);
                 startActivity(myintent);
@@ -90,4 +73,35 @@ public class expen extends AppCompatActivity {
             return insets;
         });
     }
+
+    public void setVariable(){
+        // Step 1: Get the values from EditText
+        String foodStr = foodEditText.getText().toString();
+        String transportStr = transportEditText.getText().toString();
+        String householdStr = householdEditText.getText().toString();
+        String phoneInternetStr = phoneInternetEditText.getText().toString();
+        String othersStr = othersEditText.getText().toString();
+
+        // Step 2: Check if the inputs are valid
+        if (foodStr.isEmpty() || transportStr.isEmpty() || householdStr.isEmpty() || phoneInternetStr.isEmpty() || othersStr.isEmpty()) {
+            Toast.makeText(expen.this, "Please enter all expense values", Toast.LENGTH_SHORT).show();
+            return;
+        }
+
+        // Step 3: Convert input to integers
+        int food = Integer.parseInt(foodStr);
+        int transport = Integer.parseInt(transportStr);
+        int household = Integer.parseInt(householdStr);
+        int phoneInternet = Integer.parseInt(phoneInternetStr);
+        int others = Integer.parseInt(othersStr);
+
+        // Step 4: Save data to UserInputData
+        UserInputData.setFood(food);
+        UserInputData.setTransport(transport);
+        UserInputData.setHousehold(household);
+        UserInputData.setPhoneInternet(phoneInternet);
+        UserInputData.setOthers(others);
+
+    }
 }
+

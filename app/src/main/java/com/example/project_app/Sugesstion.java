@@ -76,30 +76,30 @@ public class Sugesstion extends AppCompatActivity {
         highestExpenseText.setText("" + expenses.get(0).category + " (" + expenses.get(0).amount + ")");
 
         // ImageButton1
+        imgBT1.setImageDrawable(ContextCompat.getDrawable(getApplicationContext(),R.drawable.imgbutt1));
         imgBT1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                imgBT1.setImageDrawable(ContextCompat.getDrawable(getApplicationContext(),R.drawable.imgbutt1));
                 Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.cimbthai.com/th/personal/blog/financial-guru/5-tips-for-manage-money.html"));
                 startActivity(browserIntent);
             }
         });
 
         // ImageButton2
+        imgBT2.setImageDrawable(ContextCompat.getDrawable(getApplicationContext(),R.drawable.imgbutt2));
         imgBT2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                imgBT2.setImageDrawable(ContextCompat.getDrawable(getApplicationContext(),R.drawable.imgbutt2));
                 Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://makebykbank.kbtg.tech/articles/smart-way-to-save-money"));
                 startActivity(browserIntent);
             }
         });
 
         // ImageButton3
+        imgBT3.setImageDrawable(ContextCompat.getDrawable(getApplicationContext(),R.drawable.imgbutt3));
         imgBT3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                imgBT3.setImageDrawable(ContextCompat.getDrawable(getApplicationContext(),R.drawable.imgbutt3));
                 Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.tokiomarine.com/th/th/life/about-us/media-centre/9-tips-money-saving-can-follow.html"));
                 startActivity(browserIntent);
             }
