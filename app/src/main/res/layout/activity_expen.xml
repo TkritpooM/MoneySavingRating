@@ -9,14 +9,74 @@
     tools:context=".expen">
 
     <TextView
+        android:id="@+id/textView9"
+        android:layout_width="186dp"
+        android:layout_height="71dp"
+        android:layout_x="102dp"
+        android:layout_y="17dp"
+        android:background="@drawable/cornerradius"
+        android:text="" />
+
+    <Button
+        android:id="@+id/gosummaryBT"
+        android:layout_width="148dp"
+        android:layout_height="65dp"
+        android:layout_x="217dp"
+        android:layout_y="601dp"
+        android:backgroundTint="#8BC34A"
+        android:fontFamily="@font/aminimalbold"
+        android:text="ถัดไป"
+        android:textColor="#000000"
+        android:textColorLink="#FFFFFF"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="323dp"
+        android:layout_y="406dp"
+        android:text="📞"
+        android:textSize="34sp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="318dp"
+        android:layout_y="313dp"
+        android:text="🏠"
+        android:textSize="34sp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="197dp"
+        android:layout_y="220dp"
+        android:text="🚗"
+        android:textSize="34sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="196dp"
+        android:layout_y="129dp"
+        android:text="🍟"
+        android:textSize="34sp" />
+
+    <TextView
         android:id="@+id/text4"
-        android:layout_width="466dp"
-        android:layout_height="83dp"
-        android:layout_x="-36dp"
-        android:layout_y="-2dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="137dp"
+        android:layout_y="26dp"
+        android:fontFamily="@font/aminimalbold"
         android:gravity="center"
         android:text="รายจ่าย"
-        android:textSize="34sp"
+        android:textSize="48sp"
         android:textStyle="bold" />
 
     <TextView
@@ -24,135 +84,143 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_x="26dp"
-        android:layout_y="74dp"
+        android:layout_y="102dp"
+        android:fontFamily="@font/aminimalbold"
         android:gravity="center|start"
-        android:text="ค่าอาหาร 🍟"
-        android:textSize="20sp"
+        android:text="ค่าอาหาร "
+        android:textSize="34sp"
         android:textStyle="bold" />
 
     <EditText
         android:id="@+id/input_food"
-        android:layout_width="337dp"
-        android:layout_height="wrap_content"
+        android:layout_width="166dp"
+        android:layout_height="36dp"
         android:layout_x="26dp"
-        android:layout_y="103dp"
+        android:layout_y="140dp"
+        android:background="@drawable/cornerradius"
         android:ems="10"
+        android:gravity="center"
         android:hint="อาหาร"
         android:inputType="number"
-        android:textColor="#878383" />
+        android:textColor="#878383"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/text6"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_x="26dp"
-        android:layout_y="166dp"
+        android:layout_y="194dp"
+        android:fontFamily="@font/aminimalbold"
         android:gravity="center|start"
-        android:text="ค่าใช้จ่ายในการเดินทาง  🚗"
-        android:textSize="20sp"
+        android:text="ค่าใช้จ่ายในการเดินทาง "
+        android:textSize="34sp"
         android:textStyle="bold" />
 
     <EditText
         android:id="@+id/input_fare"
-        android:layout_width="337dp"
-        android:layout_height="wrap_content"
+        android:layout_width="166dp"
+        android:layout_height="36dp"
         android:layout_x="26dp"
-        android:layout_y="194dp"
+        android:layout_y="232dp"
+        android:background="@drawable/cornerradius"
         android:ems="10"
+        android:gravity="center"
         android:hint="เดินทาง"
         android:inputType="number"
-        android:textColor="#878383" />
+        android:textColor="#878383"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/text7"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_x="25dp"
-        android:layout_y="258dp"
+        android:layout_y="286dp"
+        android:fontFamily="@font/aminimalbold"
         android:gravity="center|start"
-        android:text="ค่าใช้จ่ายในครัวเรือน 🏠"
-        android:textSize="20sp"
+        android:text="ค่าใช้จ่ายในครัวเรือน "
+        android:textSize="34sp"
         android:textStyle="bold" />
 
     <EditText
         android:id="@+id/input_home"
-        android:layout_width="337dp"
-        android:layout_height="wrap_content"
+        android:layout_width="289dp"
+        android:layout_height="36dp"
         android:layout_x="25dp"
-        android:layout_y="286dp"
+        android:layout_y="324dp"
+        android:background="@drawable/cornerradius"
         android:ems="10"
-        android:hint="ครัวเรือน (สบู่ ผงซักฟอก)"
+        android:gravity="center"
+        android:hint="ครัวเรือน (สบู่, ผงซักฟอก)"
         android:inputType="number"
-        android:textColor="#878383" />
+        android:textColor="#878383"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/text8"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_x="26dp"
-        android:layout_y="353dp"
+        android:layout_y="381dp"
+        android:fontFamily="@font/aminimalbold"
         android:gravity="center|start"
-        android:text="ค่าสาธารณูปโภค 📞"
-        android:textSize="20sp"
+        android:text="ค่าสาธารณูปโภค "
+        android:textSize="34sp"
         android:textStyle="bold" />
 
     <EditText
         android:id="@+id/input_util"
-        android:layout_width="337dp"
-        android:layout_height="wrap_content"
+        android:layout_width="289dp"
+        android:layout_height="36dp"
         android:layout_x="26dp"
-        android:layout_y="381dp"
+        android:layout_y="419dp"
+        android:background="@drawable/cornerradius"
         android:ems="10"
-        android:hint="ึค่าโทรศัพท์ (ค่าไฟ ค่าน้ำประปา)"
+        android:gravity="center"
+        android:hint="ค่าโทรศัพท์ ค่าไฟ ค่าน้ำประปา"
         android:inputType="number"
-        android:textColor="#878383" />
+        android:textColor="#878383"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/text9"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_x="26dp"
-        android:layout_y="446dp"
+        android:layout_x="25dp"
+        android:layout_y="474dp"
+        android:fontFamily="@font/aminimalbold"
         android:gravity="center|start"
         android:text="ิอื่นๆ"
-        android:textSize="20sp"
+        android:textSize="34sp"
         android:textStyle="bold" />
 
     <EditText
         android:id="@+id/input_other"
-        android:layout_width="337dp"
-        android:layout_height="wrap_content"
+        android:layout_width="289dp"
+        android:layout_height="36dp"
         android:layout_x="25dp"
-        android:layout_y="475dp"
+        android:layout_y="513dp"
+        android:background="@drawable/cornerradius"
         android:ems="10"
-        android:hint="ค่าใช้จ่ายเพิ่มเติม (ของใช้ฟุ่มเฟย)"
+        android:gravity="center"
+        android:hint="ค่าใช้จ่ายเพิ่มเติม (ของใช้ฟุ่มเฟือย)"
         android:inputType="number"
-        android:textColor="#878383" />
+        android:textColor="#878383"
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/goincomeBT"
         android:layout_width="148dp"
         android:layout_height="65dp"
         android:layout_x="29dp"
-        android:layout_y="566dp"
+        android:layout_y="604dp"
         android:backgroundTint="#F87777"
+        android:fontFamily="@font/aminimalbold"
         android:text="ก่อนหน้า"
-        android:textColor="#090000"
+        android:textColor="#FFFFFF"
         android:textColorLink="#FFFFFF"
-        android:textSize="20sp"
-        android:textStyle="bold" />
-
-    <Button
-        android:id="@+id/gosummaryBT"
-        android:layout_width="148dp"
-        android:layout_height="65dp"
-        android:layout_x="216dp"
-        android:layout_y="565dp"
-        android:backgroundTint="#F87777"
-        android:text="ถัดไป"
-        android:textColor="#090000"
-        android:textColorLink="#FFFFFF"
-        android:textSize="20sp"
+        android:textSize="34sp"
         android:textStyle="bold" />
 
 </AbsoluteLayout>

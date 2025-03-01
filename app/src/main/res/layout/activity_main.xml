@@ -21,24 +21,12 @@
         android:textSize="20sp"
         app:cornerRadius="0dp" />
 
-    <TextView
-        android:id="@+id/appname"
-        android:layout_width="411dp"
-        android:layout_height="129dp"
-        android:layout_x="-9dp"
-        android:layout_y="12dp"
-        android:gravity="center"
-        android:text="ออมเงินออมใจ"
-        android:textAlignment="center"
-        android:textSize="50sp"
-        android:textStyle="bold" />
-
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="189dp"
-        android:layout_height="150dp"
-        android:layout_x="96dp"
-        android:layout_y="149dp"
-        app:srcCompat="@android:drawable/btn_star_big_on" />
+        android:id="@+id/imageView4"
+        android:layout_width="336dp"
+        android:layout_height="449dp"
+        android:layout_x="30dp"
+        android:layout_y="9dp"
+        app:srcCompat="@drawable/keptkub" />
 
 </AbsoluteLayout>

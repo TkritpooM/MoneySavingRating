@@ -76,9 +76,6 @@ public class expen extends AppCompatActivity {
         myincomeT.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Reset Data on press
-                UserInputData.reset();
-
                 //step 4
                 Intent myintent = new Intent(getApplicationContext(), income.class);
                 startActivity(myintent);

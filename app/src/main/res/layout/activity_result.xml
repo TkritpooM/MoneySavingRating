@@ -9,43 +9,82 @@
     tools:context=".result">
 
     <TextView
+        android:id="@+id/textView22"
+        android:layout_width="340dp"
+        android:layout_height="88dp"
+        android:layout_x="27dp"
+        android:layout_y="507dp"
+        android:background="@drawable/cornerradius"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="339dp"
+        android:layout_height="104dp"
+        android:layout_x="26dp"
+        android:layout_y="386dp"
+        android:background="@drawable/cornerradius"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="224dp"
+        android:layout_height="57dp"
+        android:layout_x="88dp"
+        android:layout_y="319dp"
+        android:background="@drawable/cornerradius"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="186dp"
+        android:layout_height="57dp"
+        android:layout_x="105dp"
+        android:layout_y="25dp"
+        android:background="@drawable/cornerradius"
+        android:text="" />
+
+    <TextView
         android:id="@+id/text17"
-        android:layout_width="466dp"
-        android:layout_height="83dp"
-        android:layout_x="-35dp"
-        android:layout_y="14dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="143dp"
+        android:layout_y="26dp"
+        android:fontFamily="@font/aminimalbold"
         android:gravity="center"
         android:text="Rating"
-        android:textSize="34sp"
+        android:textSize="48sp"
         android:textStyle="bold" />
 
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="198dp"
         android:layout_height="194dp"
-        android:layout_x="94dp"
+        android:layout_x="97dp"
         android:layout_y="105dp"
         app:srcCompat="@android:drawable/btn_star_big_on" />
 
     <TextView
         android:id="@+id/ratig_result"
-        android:layout_width="match_parent"
-        android:layout_height="56dp"
-        android:layout_x="0dp"
-        android:layout_y="324dp"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_x="95dp"
+        android:layout_y="326dp"
+        android:fontFamily="@font/aminimalbold"
         android:gravity="center_horizontal"
-        android:text="result"
-        android:textSize="34sp" />
+        android:text="Result"
+        android:textSize="40sp" />
 
     <TextView
         android:id="@+id/text18"
-        android:layout_width="124dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_x="23dp"
-        android:layout_y="390dp"
+        android:layout_x="158dp"
+        android:layout_y="391dp"
+        android:fontFamily="@font/aminimalbold"
         android:gravity="center|start"
         android:text="นี่คือผลลัพท์"
-        android:textSize="20sp"
+        android:textSize="24sp"
         android:textStyle="bold" />
 
     <TextView
@@ -54,19 +93,21 @@
         android:layout_height="wrap_content"
         android:layout_x="52dp"
         android:layout_y="427dp"
+        android:fontFamily="@font/aminimalregular"
         android:gravity="center|start"
         android:text="เงินคงเหลือ"
-        android:textSize="16sp"
+        android:textSize="23sp"
         android:textStyle="bold" />
 
     <TextView
         android:id="@+id/sum"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_x="218dp"
-        android:layout_y="428dp"
+        android:layout_x="226dp"
+        android:layout_y="427dp"
+        android:fontFamily="@font/aminimalregular"
         android:text="result"
-        android:textSize="16sp" />
+        android:textSize="23sp" />
 
     <TextView
         android:id="@+id/text20"
@@ -74,72 +115,97 @@
         android:layout_height="wrap_content"
         android:layout_x="52dp"
         android:layout_y="460dp"
+        android:fontFamily="@font/aminimalregular"
         android:gravity="center|start"
         android:text="เงินออมที่ตั้งเป้าไว้"
-        android:textSize="16sp"
+        android:textSize="23sp"
         android:textStyle="bold" />
 
     <TextView
         android:id="@+id/per_sum"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_x="218dp"
-        android:layout_y="460dp"
+        android:layout_x="226dp"
+        android:layout_y="458dp"
+        android:fontFamily="@font/aminimalregular"
         android:text="result"
-        android:textSize="16sp" />
+        android:textSize="23sp" />
 
     <TextView
-        android:id="@+id/text21"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_x="99dp"
-        android:layout_y="503dp"
-        android:gravity="center|start"
-        android:text="แสดงให้เห็นว่าเงินคงเหลือมีค่า"
-        android:textSize="16sp"
-        android:textStyle="bold" />
-
-    <TextView
-        android:id="@+id/comparis"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_x="0dp"
-        android:layout_y="529dp"
-        android:gravity="center_horizontal"
-        android:text="result"
-        android:textSize="20sp" />
-
-    <TextView
-        android:id="@+id/text22"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_x="134dp"
-        android:layout_y="559dp"
-        android:gravity="center|start"
-        android:text="เงินออมที่ตั้งเป้าไว้"
-        android:textSize="16sp"
-        android:textStyle="bold" />
+        android:id="@+id/textView20"
+        android:layout_width="78dp"
+        android:layout_height="41dp"
+        android:layout_x="304dp"
+        android:layout_y="600dp"
+        android:background="@drawable/cornerradius"
+        android:text="" />
 
     <TextView
         android:id="@+id/text23"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_x="24dp"
-        android:layout_y="591dp"
+        android:layout_x="27dp"
+        android:layout_y="608dp"
+        android:fontFamily="@font/aminimalregular"
         android:gravity="center|start"
         android:text="แสดงว่าพฤติกรรมการออมของของคุณ"
-        android:textSize="16sp"
+        android:textSize="23sp"
         android:textStyle="bold" />
 
     <TextView
         android:id="@+id/rating_thaiver"
-        android:layout_width="wrap_content"
+        android:layout_width="61dp"
         android:layout_height="wrap_content"
-        android:layout_x="301dp"
-        android:layout_y="588dp"
+        android:layout_x="313dp"
+        android:layout_y="607dp"
+        android:fontFamily="@font/aminimalregular"
         android:gravity="center_horizontal"
         android:text="result"
-        android:textSize="20sp" />
+        android:textSize="23sp" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="165dp"
+        android:layout_height="37dp"
+        android:layout_x="40dp"
+        android:layout_y="548dp"
+        android:background="@drawable/cornerradius"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/text21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="98dp"
+        android:layout_y="515dp"
+        android:fontFamily="@font/aminimalregular"
+        android:gravity="center|start"
+        android:text="แสดงให้เห็นว่าเงินคงเหลือมีค่า"
+        android:textSize="23sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/comparis"
+        android:layout_width="118dp"
+        android:layout_height="wrap_content"
+        android:layout_x="63dp"
+        android:layout_y="553dp"
+        android:fontFamily="@font/aminimalregular"
+        android:gravity="center_horizontal"
+        android:text="result"
+        android:textSize="23sp" />
+
+    <TextView
+        android:id="@+id/text22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="213dp"
+        android:layout_y="555dp"
+        android:fontFamily="@font/aminimalregular"
+        android:gravity="center|start"
+        android:text="เงินออมที่ตั้งเป้าไว้"
+        android:textSize="23sp"
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/gosummaryBT2"
@@ -148,10 +214,11 @@
         android:layout_x="33dp"
         android:layout_y="680dp"
         android:backgroundTint="#F87777"
+        android:fontFamily="@font/aminimalbold"
         android:text="ย้อนกลับ"
-        android:textColor="#090000"
+        android:textColor="#FFFFFF"
         android:textColorLink="#FFFFFF"
-        android:textSize="20sp"
+        android:textSize="34sp"
         android:textStyle="bold" />
 
     <Button
@@ -160,11 +227,12 @@
         android:layout_height="65dp"
         android:layout_x="210dp"
         android:layout_y="680dp"
-        android:backgroundTint="#B8F877"
+        android:backgroundTint="#8BC34A"
+        android:fontFamily="@font/aminimalbold"
         android:text="แนะนำ"
         android:textColor="#090000"
         android:textColorLink="#FFFFFF"
-        android:textSize="20sp"
+        android:textSize="34sp"
         android:textStyle="bold" />
 
 </AbsoluteLayout>

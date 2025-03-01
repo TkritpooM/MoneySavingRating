@@ -9,11 +9,39 @@
     tools:context=".Sugesstion">
 
     <TextView
+        android:id="@+id/textView24"
+        android:layout_width="366dp"
+        android:layout_height="81dp"
+        android:layout_x="14dp"
+        android:layout_y="330dp"
+        android:background="@drawable/cornerradius"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="367dp"
+        android:layout_height="214dp"
+        android:layout_x="13dp"
+        android:layout_y="100dp"
+        android:background="@drawable/cornerradius"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="186dp"
+        android:layout_height="71dp"
+        android:layout_x="102dp"
+        android:layout_y="17dp"
+        android:background="@drawable/cornerradius"
+        android:text="" />
+
+    <TextView
         android:id="@+id/text16"
         android:layout_width="466dp"
         android:layout_height="83dp"
         android:layout_x="-39dp"
         android:layout_y="13dp"
+        android:fontFamily="@font/aminimalbold"
         android:gravity="center"
         android:text="คำแนะนำ"
         android:textSize="48sp"
@@ -25,9 +53,10 @@
         android:layout_height="wrap_content"
         android:layout_x="26dp"
         android:layout_y="106dp"
+        android:fontFamily="@font/aminimalbold"
         android:gravity="center|start"
         android:text="ลำดับการใช้จ่าย (มาก-น้อย)"
-        android:textSize="20sp"
+        android:textSize="30sp"
         android:textStyle="bold" />
 
     <TextView
@@ -36,19 +65,21 @@
         android:layout_height="wrap_content"
         android:layout_x="57dp"
         android:layout_y="147dp"
+        android:fontFamily="@font/aminimalregular"
         android:gravity="center|start"
-        android:text="1"
-        android:textSize="16sp"
+        android:text="1.)"
+        android:textSize="24sp"
         android:textStyle="bold" />
 
     <TextView
         android:id="@+id/no1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_x="74dp"
-        android:layout_y="148dp"
+        android:layout_x="97dp"
+        android:layout_y="147dp"
+        android:fontFamily="@font/aminimalregular"
         android:text="result"
-        android:textSize="16sp" />
+        android:textSize="24sp" />
 
     <TextView
         android:id="@+id/text26"
@@ -56,19 +87,21 @@
         android:layout_height="wrap_content"
         android:layout_x="57dp"
         android:layout_y="179dp"
+        android:fontFamily="@font/aminimalregular"
         android:gravity="center|start"
-        android:text="2"
-        android:textSize="16sp"
+        android:text="2.)"
+        android:textSize="24sp"
         android:textStyle="bold" />
 
     <TextView
         android:id="@+id/no2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_x="74dp"
+        android:layout_x="97dp"
         android:layout_y="179dp"
+        android:fontFamily="@font/aminimalregular"
         android:text="result"
-        android:textSize="16sp" />
+        android:textSize="24sp" />
 
     <TextView
         android:id="@+id/text27"
@@ -76,19 +109,21 @@
         android:layout_height="wrap_content"
         android:layout_x="57dp"
         android:layout_y="211dp"
+        android:fontFamily="@font/aminimalregular"
         android:gravity="center|start"
-        android:text="3"
-        android:textSize="16sp"
+        android:text="3.)"
+        android:textSize="24sp"
         android:textStyle="bold" />
 
     <TextView
         android:id="@+id/no3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_x="74dp"
+        android:layout_x="97dp"
         android:layout_y="211dp"
+        android:fontFamily="@font/aminimalregular"
         android:text="result"
-        android:textSize="16sp" />
+        android:textSize="24sp" />
 
     <TextView
         android:id="@+id/text28"
@@ -96,19 +131,21 @@
         android:layout_height="wrap_content"
         android:layout_x="57dp"
         android:layout_y="243dp"
+        android:fontFamily="@font/aminimalregular"
         android:gravity="center|start"
-        android:text="4"
-        android:textSize="16sp"
+        android:text="4.)"
+        android:textSize="24sp"
         android:textStyle="bold" />
 
     <TextView
         android:id="@+id/no4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_x="75dp"
-        android:layout_y="243dp"
+        android:layout_x="97dp"
+        android:layout_y="244dp"
+        android:fontFamily="@font/aminimalregular"
         android:text="result"
-        android:textSize="16sp" />
+        android:textSize="24sp" />
 
     <TextView
         android:id="@+id/text29"
@@ -116,19 +153,21 @@
         android:layout_height="wrap_content"
         android:layout_x="58dp"
         android:layout_y="276dp"
+        android:fontFamily="@font/aminimalregular"
         android:gravity="center|start"
-        android:text="5"
-        android:textSize="16sp"
+        android:text="5.)"
+        android:textSize="24sp"
         android:textStyle="bold" />
 
     <TextView
         android:id="@+id/no5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_x="76dp"
-        android:layout_y="276dp"
+        android:layout_x="96dp"
+        android:layout_y="275dp"
+        android:fontFamily="@font/aminimalregular"
         android:text="result"
-        android:textSize="16sp" />
+        android:textSize="24sp" />
 
     <TextView
         android:id="@+id/text30"
@@ -136,40 +175,46 @@
         android:layout_height="wrap_content"
         android:layout_x="28dp"
         android:layout_y="335dp"
+        android:fontFamily="@font/aminimalbold"
         android:gravity="center|start"
         android:text="ขอแนะนำให้ลดค่าใช้จ่ายของ"
-        android:textSize="20sp"
+        android:textColor="#F44336"
+        android:textSize="24sp"
         android:textStyle="bold" />
 
     <TextView
         android:id="@+id/no1_butdiff"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_x="0dp"
-        android:layout_y="378dp"
+        android:layout_x="1dp"
+        android:layout_y="374dp"
+        android:fontFamily="@font/aminimalbold"
         android:gravity="center_horizontal"
         android:text="result"
-        android:textSize="24sp" />
+        android:textColor="#F44336"
+        android:textSize="26sp" />
 
     <TextView
         android:id="@+id/text31"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_x="191dp"
-        android:layout_y="415dp"
+        android:layout_x="208dp"
+        android:layout_y="417dp"
+        android:fontFamily="@font/aminimalregular"
         android:gravity="center|start"
         android:text="*เนื่องจากใช้จ่ายในหมวดนี้เยอะสุด"
-        android:textSize="12sp"
+        android:textSize="18sp"
         android:textStyle="bold" />
 
     <TextView
         android:id="@+id/text32"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_x="23dp"
-        android:layout_y="465dp"
+        android:layout_x="15dp"
+        android:layout_y="486dp"
+        android:fontFamily="@font/aminimalbold"
         android:gravity="center|start"
-        android:text="แนะนำเพิ่มคลิกเลย"
+        android:text="แนะนำเพิ่ม คลิกเลย!"
         android:textSize="24sp"
         android:textStyle="bold" />
 
@@ -217,15 +262,17 @@
 
     <Button
         android:id="@+id/redo"
-        android:layout_width="148dp"
-        android:layout_height="65dp"
-        android:layout_x="123dp"
-        android:layout_y="703dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="139dp"
+        android:layout_y="716dp"
         android:backgroundTint="#F87777"
+        android:fontFamily="@font/aminimalbold"
+        android:gravity="center"
         android:text="ทำใหม่"
-        android:textColor="#090000"
+        android:textColor="#FFFFFF"
         android:textColorLink="#FFFFFF"
-        android:textSize="20sp"
+        android:textSize="34sp"
         android:textStyle="bold" />
 
 </AbsoluteLayout>
