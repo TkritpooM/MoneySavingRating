@@ -45,11 +45,11 @@ public class expen extends AppCompatActivity {
         mysumBT.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                setVariable();
-
-                //step 4
-                Intent myintent = new Intent(getApplicationContext(), summary.class);
-                startActivity(myintent);
+                if(setVariable()){
+                    //step 4
+                    Intent myintent = new Intent(getApplicationContext(), summary.class);
+                    startActivity(myintent);
+                }
             }
         });
 
@@ -57,15 +57,13 @@ public class expen extends AppCompatActivity {
         myincomeT.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                setVariable();
-
-                //step 4
-                Intent myintent = new Intent(getApplicationContext(), income.class);
-                startActivity(myintent);
+                if(setVariable()){
+                    //step 4
+                    Intent myintent = new Intent(getApplicationContext(), income.class);
+                    startActivity(myintent);
+                }
             }
         });
-
-
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
@@ -74,7 +72,7 @@ public class expen extends AppCompatActivity {
         });
     }
 
-    public void setVariable(){
+    public boolean setVariable(){
         // Step 1: Get the values from EditText
         String foodStr = foodEditText.getText().toString();
         String transportStr = transportEditText.getText().toString();
@@ -85,7 +83,7 @@ public class expen extends AppCompatActivity {
         // Step 2: Check if the inputs are valid
         if (foodStr.isEmpty() || transportStr.isEmpty() || householdStr.isEmpty() || phoneInternetStr.isEmpty() || othersStr.isEmpty()) {
             Toast.makeText(expen.this, "Please enter all expense values", Toast.LENGTH_SHORT).show();
-            return;
+            return false;
         }
 
         // Step 3: Convert input to integers
@@ -102,6 +100,7 @@ public class expen extends AppCompatActivity {
         UserInputData.setPhoneInternet(phoneInternet);
         UserInputData.setOthers(others);
 
+        return true;
     }
 }
 

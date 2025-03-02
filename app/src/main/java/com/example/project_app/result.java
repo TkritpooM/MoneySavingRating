@@ -41,10 +41,10 @@ public class result extends AppCompatActivity {
         // Get Data from UserInputData
         int income = UserInputData.getIncome();
         int totalExpenses = UserInputData.getFood() +
-                UserInputData.getTransport() +
-                UserInputData.getHousehold() +
-                UserInputData.getPhoneInternet() +
-                UserInputData.getOthers();
+                            UserInputData.getTransport() +
+                            UserInputData.getHousehold() +
+                            UserInputData.getPhoneInternet() +
+                            UserInputData.getOthers();
         int savingPercentage = UserInputData.getSavingsPercentage();
 
         // Calculate

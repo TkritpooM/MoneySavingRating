@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".GraphManifest">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- แถบด้านบน (App Bar) -->
+            <com.google.android.material.appbar.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/colorPrimary">
+
+                <com.google.android.material.appbar.MaterialToolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="#807B7B"
+                    android:fontFamily="@font/aminimalbolditalic"
+                    app:title="💸 KeptKub"
+                    app:titleTextColor="@android:color/white" />
+            </com.google.android.material.appbar.AppBarLayout>
+
+            <TextView
+                android:id="@+id/summary_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:text="📊 สรุปค่าใช้จ่าย 📊"
+                android:textColor="#000"
+                android:textSize="32sp"
+                android:textStyle="bold" />
+
+            <!-- เส้นแบ่งส่วน -->
+            <View
+                android:layout_width="434dp"
+                android:layout_height="2dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:background="#9E9E9E" />
+
+            <!-- กราฟวงกลม & แท่ง -->
+            <FrameLayout
+                android:id="@+id/piexbar_chart"
+                android:layout_width="match_parent"
+                android:layout_height="397dp" />
+
+            <!-- เส้นแบ่งส่วน -->
+            <View
+                android:layout_width="434dp"
+                android:layout_height="2dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:background="#9E9E9E" />
+
+            <!-- Max percent from Pie Chart -->
+            <TextView
+                android:id="@+id/max_percent_Pie"
+                android:layout_width="346dp"
+                android:layout_height="153dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="Descriptions"
+                android:textColor="#000"
+                android:textSize="18sp" />
+
+            <!-- เส้นแบ่งส่วน -->
+            <View
+                android:layout_width="287dp"
+                android:layout_height="2dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="#9E9E9E" />
+
+            <!-- Text: ดูข้อมูลในรูปแบบอื่น -->
+            <TextView
+                android:id="@+id/tv_info_other_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:text="👀 คลิกที่นี่เพื่อดูข้อมูลในรูปแบบอื่น!"
+                android:textColor="#FF5722"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <!-- BTN for change Graph -->
+            <Button
+                android:id="@+id/btn_toggle_chart"
+                android:layout_width="117dp"
+                android:layout_height="62dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:backgroundTint="#2196F3"
+                android:foreground="?attr/selectableItemBackground"
+                android:padding="10dp"
+                android:text="เพิ่มเติม"
+                android:textSize="21sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <!-- Return -->
+                <Button
+                    android:id="@+id/btn_option1back"
+                    android:layout_width="0dp"
+                    android:layout_height="62dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#DC8707"
+                    android:elevation="4dp"
+                    android:padding="10dp"
+                    android:text="🔙 ย้อนกลับ"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    app:cornerRadius="0dp" />
+
+                <!-- Do it again -->
+                <Button
+                    android:id="@+id/btn_option2reset"
+                    android:layout_width="0dp"
+                    android:layout_height="62dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#009688"
+                    android:elevation="4dp"
+                    android:padding="10dp"
+                    android:text="ทำใหม่ 🔄"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    app:cornerRadius="0dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

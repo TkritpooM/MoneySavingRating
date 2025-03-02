@@ -28,7 +28,7 @@ public class Sugesstion extends AppCompatActivity {
     //step 1 Declare components names
     TextView no1text, no2text, no3text, no4text, no5text, highestExpenseText;
     ImageButton imgBT1, imgBT2, imgBT3;
-    Button myresetBT;
+    Button myresetBT, myinfoBT;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,6 +49,7 @@ public class Sugesstion extends AppCompatActivity {
         imgBT3 = findViewById(R.id.image_link3);
 
         myresetBT = findViewById(R.id.redo);
+        myinfoBT = findViewById(R.id.info);
 
         // Get Data from UserInputData.java
         List<ExpenseItem> expenses = new ArrayList<>();
@@ -105,15 +106,22 @@ public class Sugesstion extends AppCompatActivity {
             }
         });
 
-        //step 3 Back to Previous Page
+        //step 3 Back to result Page
         myresetBT.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Reset Data on press
-                UserInputData.reset();
-
                 //step 4
-                Intent myintent = new Intent(getApplicationContext(), income.class);
+                Intent myintent = new Intent(getApplicationContext(), result.class);
+                startActivity(myintent);
+            }
+        });
+
+        //step 3 Go to graph Page
+        myinfoBT.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //step 4
+                Intent myintent = new Intent(getApplicationContext(), GraphManifest.class);
                 startActivity(myintent);
             }
         });
